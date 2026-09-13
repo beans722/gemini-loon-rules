@@ -18,6 +18,9 @@ DOMAIN-SUFFIX,bard.google.com
 DOMAIN,gemini.gstatic.com
 
 # --- Gemini frontend and realtime channels ---
+# Google AI frequently uses changing <service>-pa.googleapis.com hosts.
+# This narrow suffix catches new PA endpoints without proxying all googleapis.com.
+DOMAIN-SUFFIX,pa.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,webchannel-robinfrontend-pa.googleapis.com
 DOMAIN,signaler-pa.googleapis.com
@@ -36,6 +39,8 @@ DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,gem-pa.googleapis.com
 
 # --- Google AI Studio / MakerSuite ---
+# Same pattern for Google AI Studio clients6 PA endpoints.
+DOMAIN-SUFFIX,pa.clients6.google.com
 DOMAIN,ai.google.dev
 DOMAIN,ai.studio
 DOMAIN-SUFFIX,aistudio.google.com
