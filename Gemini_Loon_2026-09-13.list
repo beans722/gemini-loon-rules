@@ -1,0 +1,111 @@
+# Gemini / Google AI rules for Loon
+# Updated: 2026-09-13
+# Purpose: Gemini, Google AI Studio, NotebookLM, Jules, Labs, Flow, Stitch,
+#          Opal, Antigravity and Google Gemini Code Assist related traffic.
+# Loon: assign this Rule Set to AI_AUTO (or your Gemini-only policy).
+# Design: explicit domains are preferred; no DOMAIN-REGEX dependency.
+# Reference rule sources checked: blackmatrix7/ios_rule_script,
+# SukkaW/Surge, v2fly/domain-list-community, rz6agx/iOS-Rule.
+# Their URLs are listed in the accompanying response for traceability.
+# Note: this list intentionally does not include the whole google.com,
+#       googleapis.com, clients6.google.com or googleusercontent.com suffix.
+
+# --- Gemini web / legacy Bard ---
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN,gemini.gstatic.com
+
+# --- Gemini frontend and realtime channels ---
+DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,webchannel-robinfrontend-pa.googleapis.com
+DOMAIN,signaler-pa.googleapis.com
+DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,optimizationguide-pa.googleapis.com
+DOMAIN,geller-pa.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,assistant-s3-pa.googleapis.com
+DOMAIN,appcatalyst.pa.googleapis.com
+DOMAIN,developerprofiles-pa.googleapis.com
+DOMAIN,phonedeviceverification-pa.googleapis.com
+
+# --- Generative Language API ---
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN,gem-pa.googleapis.com
+
+# --- Google AI Studio / MakerSuite ---
+DOMAIN,ai.google.dev
+DOMAIN,ai.studio
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+DOMAIN,signaler-pa.clients6.google.com
+DOMAIN,waa-pa.clients6.google.com
+DOMAIN,people-pa.clients6.google.com
+
+# --- NotebookLM ---
+DOMAIN,notebook.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN,notebooklm-pa.googleapis.com
+DOMAIN,notebooklm.googleapis.com
+
+# --- Jules / Google AI Labs / Flow / Stitch / Opal ---
+DOMAIN,jules.google
+DOMAIN,jules.google.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,labs.google.com
+DOMAIN,flow.google
+DOMAIN-SUFFIX,stitch.withgoogle.com
+DOMAIN-SUFFIX,opal.google
+DOMAIN-SUFFIX,opal.google.com
+DOMAIN-SUFFIX,opal.withgoogle.com
+
+# --- Google DeepMind ---
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# --- Gemini Code Assist / Cloud Code / Android Studio ---
+DOMAIN,cloudaicompanion.googleapis.com
+DOMAIN,cloudcode-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,aicode.googleapis.com
+DOMAIN,aida.googleapis.com
+
+# --- Antigravity ---
+DOMAIN,antigravity.google
+DOMAIN,antigravity-unleash.goog
+DOMAIN,antigravity-pa.googleapis.com
+DOMAIN,antigravity.googleapis.com
+
+# --- Shared Google account / API / avatar endpoints used during Gemini login ---
+# These are exact or narrow hosts, not the whole Google domain.
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
+DOMAIN,apis.google.com
+DOMAIN,lh3.googleusercontent.com
+DOMAIN,lh4.googleusercontent.com
+DOMAIN,lh5.googleusercontent.com
+DOMAIN,lh6.googleusercontent.com
+DOMAIN,o.pki.goog
+
+# --- Supporting keywords seen in maintained AI rule sets ---
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,colab
+
+# --- Optional broad compatibility rules ---
+# Enable only if Gemini login/redirect still fails and your policy should also
+# carry ordinary Google web traffic. They are disabled deliberately because
+# they can send Search, YouTube, Maps and unrelated Google services to AI_AUTO.
+# DOMAIN,www.google.com
+# DOMAIN-SUFFIX,google.com
+# DOMAIN-SUFFIX,googleapis.com
+# DOMAIN-SUFFIX,clients6.google.com
+# DOMAIN-SUFFIX,gstatic.com
+# DOMAIN-SUFFIX,googleusercontent.com
