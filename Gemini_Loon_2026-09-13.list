@@ -37,6 +37,9 @@ DOMAIN,phonedeviceverification-pa.googleapis.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,gem-pa.googleapis.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
 
 # --- Google AI Studio / MakerSuite ---
 # Same pattern for Google AI Studio clients6 PA endpoints.
@@ -48,6 +51,7 @@ DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
 DOMAIN,signaler-pa.clients6.google.com
 DOMAIN,waa-pa.clients6.google.com
@@ -57,6 +61,7 @@ DOMAIN,people-pa.clients6.google.com
 DOMAIN,notebook.google.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebook.google.com
 DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,notebooklm.googleapis.com
 
@@ -80,7 +85,9 @@ DOMAIN,cloudaicompanion.googleapis.com
 DOMAIN,cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,aicode.googleapis.com
+DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN,aida.googleapis.com
+DOMAIN-SUFFIX,aida.googleapis.com
 
 # --- Antigravity ---
 DOMAIN,antigravity.google
@@ -97,6 +104,7 @@ DOMAIN,play.googleapis.com
 DOMAIN,notifications-pa.googleapis.com
 DOMAIN,subscriptionsfirstparty-pa.googleapis.com
 DOMAIN,apis.google.com
+DOMAIN-SUFFIX,apis.google.com
 DOMAIN,lh3.googleusercontent.com
 DOMAIN,lh4.googleusercontent.com
 DOMAIN,lh5.googleusercontent.com
@@ -107,6 +115,8 @@ DOMAIN,o.pki.goog
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,colab
+DOMAIN-SUFFIX,g.ai
+DOMAIN-SUFFIX,c.gle
 
 # --- Optional broad compatibility rules ---
 # Enable only if Gemini login/redirect still fails and your policy should also
