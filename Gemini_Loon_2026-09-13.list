@@ -87,6 +87,8 @@ DOMAIN,antigravity.googleapis.com
 # These are exact or narrow hosts, not the whole Google domain.
 DOMAIN,accounts.google.com
 DOMAIN,oauth2.googleapis.com
+DOMAIN,oauthaccountmanager.googleapis.com
+DOMAIN,play.googleapis.com
 DOMAIN,apis.google.com
 DOMAIN,lh3.googleusercontent.com
 DOMAIN,lh4.googleusercontent.com
